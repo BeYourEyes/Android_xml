@@ -103,6 +103,14 @@
                 android:padding="30dp"
                 android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/nutri_caution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚠ 고지혈증에 주의해야 할 성분을 포함해요"
+                    style="@style/text1"
+                    android:textColor="@color/red" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -314,11 +322,21 @@
                 android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/aller_round"
                 android:gravity="center"
                 android:text="식품 알러지 정보"
                 style="@style/title3"  />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:text="✅  나의 알러지를 유발하는 성분이 발견되지 않았어요"
+                style="@style/text1"
+                android:textColor="@color/black" />
 
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/allergyChipGroup1"
